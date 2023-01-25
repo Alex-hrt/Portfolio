@@ -2,7 +2,7 @@
 
 This project is a fullstack web development portfolio website built using ReactJS, SASS and Sanity CMS. It is designed to showcase my skills and previous projects as a web developer, as well as my past jobs and experience. The website is designed to be user-friendly and easy to navigate, making it easy for potential clients and employers to learn more about my skills and experience. The site is also fully responsive, ensuring that it looks great on any device, from desktop computers to mobile devices. If you're a web developer looking to build a professional, effective portfolio website, this project is a great starting point.
 
-Check out the live version on my website: [alexheritier.dev](www.alexheritier.dev)
+Check out the live version on my website: [alexheritier.dev](https://www.alexheritier.dev)
 
 ## Screenshots
 
