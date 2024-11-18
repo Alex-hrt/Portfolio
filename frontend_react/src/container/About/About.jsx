@@ -19,8 +19,10 @@ const About = () => {
 	return (
 		<>
 			<h2 className="head-text">
-				I Know that <span>Good Code</span> <br />
-				means <span>Good Business</span>
+				<span>Versatility</span> without sacrificing{" "}
+				<span>Quality</span>
+				<br />
+				Because <span>Good Code</span> means <span>Good Business</span>
 			</h2>
 
 			<div className="app__profiles">

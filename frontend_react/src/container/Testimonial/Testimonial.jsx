@@ -33,22 +33,22 @@ const Testimonial = () => {
 			{testimonials.length && (
 				<>
 					<div className="app__testimonial-item app__flex">
-						<img
-							src={urlFor(testimonials[currentIndex].imgurl)}
-							alt={testimonials[currentIndex].name}
-						/>
-						<div className="app__testimonial-content">
+						<div className="app__testimonial-author">
+							<img
+								src={urlFor(testimonials[currentIndex].imgurl)}
+								alt={testimonials[currentIndex].name}
+							/>
+							<h4 className="bold-text">
+								{testimonials[currentIndex].name}
+							</h4>
+							<h5 className="p-text">
+								{testimonials[currentIndex].company}
+							</h5>
+						</div>
+						<div className="app__testimonial-text">
 							<p className="p-text">
 								{testimonials[currentIndex].feedback}
 							</p>
-							<div>
-								<h4 className="bold-text">
-									{testimonials[currentIndex].name}
-								</h4>
-								<h5 className="p-text">
-									{testimonials[currentIndex].company}
-								</h5>
-							</div>
 						</div>
 					</div>
 
@@ -86,7 +86,9 @@ const Testimonial = () => {
 						whileInView={{ opacity: [0, 1] }}
 						transition={{ duration: 0.5, type: "tween" }}
 						key={brand._id}>
-						<img src={urlFor(brand.imgUrl)} alt={brand.name} />
+						<a href={brand.url} target="_blank" rel="noreferrer">
+							<img src={urlFor(brand.imgUrl)} alt={brand.name} />
+						</a>
 					</motion.div>
 				))}
 			</div>

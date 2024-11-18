@@ -1,3 +1,8 @@
+
+a:link {
+	text-decoration: none; 
+}
+
 .app__works {
 	flex: 1;
 	width: 100%;
@@ -154,3 +159,9 @@
 		top: -25px;
 	}
 }
+
+
+/* Darken image and show GitHub logo on hover over any part of the item */
+// .app__work-item:hover .app__work-img {
+//     filter: brightness(0.5);
+// }

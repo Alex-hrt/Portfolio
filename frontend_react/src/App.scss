@@ -128,14 +128,17 @@
 		transition: all 0.3s ease-in-out;
 
 		svg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			width: 20px;
 			height: 20px;
 			color: var(--gray-color);
 		}
 
 		&:hover {
-			background-color: var(--secondary-color);
-			border-color: var(--secondary-color);
+			background-color: var(--gray-color);
+			border-color: var(--gray-color);
 
 			svg {
 				color: var(--white-color);

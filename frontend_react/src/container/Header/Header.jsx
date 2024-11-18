@@ -32,9 +32,9 @@ const Header = () => (
 				</div>
 
 				<div className="tag-cmp app__flex">
-					<p className="p-text">Full Stack Web Developer</p>
+					<p className="bold-text">AI Engineer</p>
 					<p className="p-text">&</p>
-					<p className="p-text">Freelancer</p>
+					<p className="bold-text">MLOps developer</p>
 				</div>
 			</div>
 		</motion.div>
@@ -57,15 +57,17 @@ const Header = () => (
 			variants={scaleVariants}
 			whileInView={scaleVariants.whileInView}
 			className="app__header-circles">
-			{[images.git, images.react, images.api, images.javascript].map(
-				(circle, index) => (
-					<div
-						className="circle-cmp app__flex"
-						key={`circle-${index}`}>
-						<img src={circle} alt="profile_bg" />
-					</div>
-				)
-			)}
+			{[
+				images.huggingface,
+				images.python,
+				images.api,
+				images.aws,
+				images.docker,
+			].map((circle, index) => (
+				<div className="circle-cmp app__flex" key={`circle-${index}`}>
+					<img src={circle} alt="prog_lang_icon" />
+				</div>
+			))}
 		</motion.div>
 	</div>
 );
