@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 
 const NavigationDots = () => {
 	const [active, setActive] = useState("home");
-	const pages = ["home", "about", "work", "skills", "testimonial", "contact"];
+	const pages = ["home", 
+		"about", 
+		// "work", 
+		"skills", 
+		"testimonial", 
+		"contact"];
 
 	useEffect(() => {
 		const handleScroll = () => {

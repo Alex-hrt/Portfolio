@@ -17,11 +17,11 @@ const SocialMedia = () => {
 	return (
 		<>
 			<div className="app__social">
-				<a href={cv.length > 0 ? cv[0].cvUrl : ""} target="blank_">
+				{/* <a href={cv.length > 0 ? cv[0].cvUrl : ""} target="blank_">
 					<div>
 						<BsFileEarmarkPersonFill />
 					</div>
-				</a>
+				</a> */}
 
 				<a
 					href="https://www.linkedin.com/in/alexh%C3%A9ritier/"
