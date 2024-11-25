@@ -71,12 +71,14 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
+	position: relative; // Needed for positioning pseudo-elements
 
 	p {
 		font-size: 1.25rem;
 		line-height: 2rem;
 		color: var(--black-color);
 		font-family: var(--font-base);
+		position: relative; // Ensures pseudo-elements align with the text
 
 		@media screen and (min-width: 2000px) {
 			font-size: 2rem;
@@ -84,9 +86,22 @@
 		}
 	}
 
-	@media screen and (max-width: 600px) {
-		margin-top: 2rem;
-		padding: 0;
+	&::before, &::after {
+		content: '"';
+		font-size: 10rem;
+		color: var(--secondary-color);
+		font-family: var(--font-base);
+		position: absolute;
+	}
+
+	&::before {
+		top: -50px;
+		left: -10px;
+	}
+
+	&::after {
+		bottom: -120px;
+		right: -10px;
 	}
 }
 

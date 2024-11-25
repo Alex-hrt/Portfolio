@@ -14,9 +14,10 @@ export default {
       type: 'number',
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'string',
+      name: 'desc',
+      title: 'Desc',
+      type: 'array',
+      of: [{type: 'block'}],
     },
     {
       name: 'imgUrl',

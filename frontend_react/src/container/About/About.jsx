@@ -1,3 +1,4 @@
+import { PortableText } from "@portabletext/react";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
@@ -38,7 +39,7 @@ const About = () => {
 							{about.title}
 						</h2>
 						<p className="p-text" style={{ marginTop: 10 }}>
-							{about.description}
+							<PortableText value={about.desc} />
 						</p>
 					</motion.div>
 				))}
