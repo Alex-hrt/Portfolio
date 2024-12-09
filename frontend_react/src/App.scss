@@ -156,6 +156,61 @@
 				height: 30px;
 			}
 		}
+
+		.cv-container {
+			position: relative;
+			width: 50px;
+			height: 50px;
+		}
+
+		.cv-bubble {
+			svg {
+				color: var(--gray-color);
+			}
+
+			&:hover {
+				background-color: var(--gray-color);
+				svg {
+					color: var(--white-color);
+				}
+			}
+		}
+
+		.cv-options {
+			position: absolute;
+			display: flex;
+			width: 0px;
+			height: 0px;
+			top: 10; /* Adjust alignment */
+			left: 115px; /* Position next to the main bubble */
+		}
+
+		.cv-option {
+			text-decoration: none;
+
+			.cv-option-bubble {
+
+				svg {
+					color: var(--gray-color);
+				}
+
+				span {
+					color: var(--gray-color);
+				}
+
+				&:hover {
+
+					svg {
+						color: var(--white-color);
+					}
+
+					span {
+						color: var(--white-color);
+					}
+				}
+			}
+		}
+
 	}
 }
 

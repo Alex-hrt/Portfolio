@@ -4,8 +4,13 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'cvUrl',
-      title: 'CV URL',
+      name: 'cvUrlFr',
+      title: 'CV URL FR',
+      type: 'url',
+    },
+    {
+      name: 'cvUrlEn',
+      title: 'CV URL EN',
       type: 'url',
     },
   ],
